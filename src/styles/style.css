@@ -2,6 +2,6 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-h1 {
-    color: darkolivegreen;
+.af-placeholder {
+    height: 500px;
 }

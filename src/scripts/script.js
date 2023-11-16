@@ -1,1 +1,1 @@
-alert("Hello!");
+// Our javascript logic goes here:
