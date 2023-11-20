@@ -1,7 +1,98 @@
+/* color scheme: 
+https://visme.co/blog/website-color-schemes/
+15)
+#EDC7B7 - PINK
+#EEE2DC - GREY
+#BAB2B5 - LIGHT BROWN
+#123C69 - DARK BLUE
+#AC3B61 - DARK PINK
+*/
+
 body {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Unica One', sans-serif;
+}
+
+p {
+    font-family: 'Laila', serif;
+    font-weight: bold;
 }
 
 .af-placeholder {
-    height: 500px;
+    height: 800px;
+}
+
+#ada-name {
+    font-size: 180% !important;
+    color: #123C69 !important;
+}
+
+#ada-name > span {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 200% !important;
+    font-weight: bold;
+    color: #BAB2B5 !important;
+    padding-bottom: 15px;
+}
+
+h5 {
+    font-size: 180% !important;
+    font-weight: bold;
+    color: #123C69 !important;
+}
+
+#navbar, #footer {
+    background-color: #EEE2DC !important;
+}
+
+svg {
+    fill: #AC3B61;
+    margin-right: 5px;
+}
+
+.nav-link {
+    font-size: 120% !important;
+    color: #123C69 !important;
+}
+
+.active {
+    color: #AC3B61 !important;
+    font-weight: bold !important;
+    border-bottom: 1px solid #123C69;
+}
+
+footer {
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+}
+
+#main-content {
+    background-image: url('../images/sample-background.jpg');
+    background-size: cover;
+    padding-left: 12% !important;
+    padding-right: 12% !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 900px;
+
+}
+
+.card {
+    border: 2px solid #AC3B61;
+    background-color: #EEE2DC;
+}
+
+.btn-primary {
+    background-color: #AC3B61 !important;
+    border-color: #AC3B61 !important;
+}
+
+.card-title {
+    color: #AC3B61 !important;
+}
+
+.card-text {
+    color: #123C69 !important;
 }
