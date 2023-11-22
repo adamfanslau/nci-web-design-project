@@ -43,7 +43,8 @@ h5 {
     color: #123C69 !important;
 }
 
-#navbar, #footer {
+#navbar,
+#footer {
     background-color: #EEE2DC !important;
 }
 
@@ -55,6 +56,11 @@ svg {
 .nav-link {
     font-size: 120% !important;
     color: #123C69 !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #AC3B61 !important;
 }
 
 .active {
@@ -76,17 +82,28 @@ footer {
     padding-top: 50px;
     padding-bottom: 50px;
     min-height: 900px;
-
 }
 
 .card {
     border: 2px solid #AC3B61;
     background-color: #EEE2DC;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.card:hover {
+    border-color: #123C69;
+    background-color: #BAB2B5;
 }
 
 .btn-primary {
     background-color: #AC3B61 !important;
     border-color: #AC3B61 !important;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #123C69 !important;
+    border-color: #123C69 !important;
 }
 
 .card-title {
