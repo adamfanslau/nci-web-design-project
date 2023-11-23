@@ -7,9 +7,10 @@
     <title>NCI Web Design and Client-Side Scripting Project</title>
 
     <!-- Google fonts: -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300;400;700&family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap: -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -18,6 +19,7 @@
     <!-- Local links: -->
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/script.js" defer></script>
+
 </head>
 <body>
     <nav class="navbar navbar-expand-md bg-body-tertiary" id="navbar">
@@ -55,9 +57,44 @@
             </div>
         </div>
       </nav>
-      <div class="container-fluid" id="main-content">
-        <h1>A b o u t</h1>
-      </div>
+      <div class="container-fluid" id="main-content-about-us">
+        <h1>About ADA Web Design</h1>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Our Story</h2>
+                <p>Welcome to ADA Web Design, where creativity and innovation converge to shape digital experiences. Our journey began with a vision to redefine web design, transcending the ordinary to deliver extraordinary results.</p>
+
+                <p>Founded by a team of passionate individuals, ADA Web Design has evolved into a hub of artistic expression and technical expertise. Each project is an opportunity to weave a unique narrative, combining aesthetics with functionality to leave a lasting imprint on the digital landscape.</p>
+            </div>
+
+            <div class="col-md-6">
+                <img src="images/team.jpg" alt="Our Team" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h2>Our Mission</h2>
+                <p>At ADA Web Design, our mission is to empower businesses and individuals through captivating digital experiences. We believe in the power of effective web design to elevate brands, engage audiences, and drive success.</p>
+
+                <p>We are driven by a commitment to excellence, continuous innovation, and a user-centric approach. Our mission is to not just meet expectations but to exceed them, crafting websites that resonate with your audience and achieve your unique goals.</p>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h2>Why Choose ADA Web Design?</h2>
+                <p>Choosing a web design partner is a crucial decision for the success of your online presence. Here's why ADA Web Design stands out:</p>
+                <ul>
+                    <li><strong>Creative Excellence:</strong> Our team of talented designers is dedicated to creating visually stunning and unique websites that capture attention and inspire action.</li>
+                    <li><strong>User-Centric Approach:</strong> We prioritize the user experience to ensure your audience navigates seamlessly through your website, fostering engagement and satisfaction.</li>
+                    <li><strong>Custom Solutions:</strong> Every project is approached with individuality. We tailor our solutions to match your specific goals and requirements, ensuring a bespoke and impactful online presence.</li>
+                    <li><strong>Reliable Support:</strong> Our commitment doesn't end with the launch. We provide ongoing support to ensure your website continues to perform at its best, adapting to changes and growing with your business.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
       <div class="container-fluid" id="footer">
         <footer class="py-5">
             <div class="row">
@@ -101,7 +138,25 @@
                     <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                     <label for="newsletter1" class="visually-hidden">Email address</label>
                     <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                    <button class="btn btn-primary" type="button">Subscribe</button>
+                    <button id="subscribeButton" class="btn btn-primary" type="button">Subscribe</button>
+
+                    <div class="modal" id="subscribeConfirmationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Your subscription was successful!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     </div>
                 </form>
                 </div>

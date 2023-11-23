@@ -9,11 +9,11 @@ https://visme.co/blog/website-color-schemes/
 */
 
 body {
-    font-family: 'Unica One', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 p {
-    font-family: 'Laila', serif;
+    font-family: 'Aleo', serif;
     font-weight: bold;
 }
 
@@ -75,8 +75,18 @@ footer {
 }
 
 #main-content {
-    background-image: url('../images/sample-background.jpg');
-    background-size: cover;
+    background-image: url('../images/background.jpg');
+    background-size: cover; 
+    padding-left: 12% !important;
+    padding-right: 12% !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 900px;
+}
+
+#main-content-about-us {
+    background-image: url('../images/teambackground.jpg');
+    background-size: cover; 
     padding-left: 12% !important;
     padding-right: 12% !important;
     padding-top: 50px;
