@@ -12,6 +12,7 @@
     --fonts-color:#8E8D8A;
     --header-footer-color: #D8C3A5 ;
     --main-background-color:#EAE7DC;
+    --main-background-color-opaque:#eae7dc9a;
 }
 
 body {
@@ -20,7 +21,6 @@ body {
 
 p {
     font-family: 'Mukta', sans-serif;
-    font-weight: bold;
     color: var(--fonts-color) !important;
 }
 
@@ -45,12 +45,21 @@ h1 {
     padding-bottom: 15px;
     letter-spacing: 8px;
     border-bottom: 1px solid var(--main-branding-color);
+    margin-bottom: 20px;
 }
 
-h5 {
-    font-size: 180% !important;
-    font-weight: bold;
+h2 {
+    font-family: 'Mukta', sans-serif;
+    font-size: 120% !important;
+    font-weight: normal;
     color: var(--main-branding-color) !important;
+    text-shadow: 1px 1px 2px var(--buttons-color);
+    padding-bottom: 20px;
+    padding-right: 20%;
+    padding-left: 20px;
+    letter-spacing: 3px;
+    border-bottom: 1px solid var(--main-branding-color);
+    margin-bottom: 50px;
 }
 
 #navbar, #footer {
@@ -101,6 +110,18 @@ footer {
     border: 2px solid var(--main-branding-color);
     background-color: var(--main-background-color);
     box-shadow: 5px 5px 5px grey;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    background-color: var(--main-background-color-opaque);
+    box-shadow: 7px 7px 7px grey;
 }
 
 .btn-primary {
@@ -108,12 +129,32 @@ footer {
     border-color: var(--buttons-color) !important;
 }
 
+.card-img-top {
+    height: 50% !important;
+    object-fit: cover !important;
+}
+
+h5 {
+    font-size: 160% !important;
+    font-weight: bold;
+    color: var(--main-branding-color) !important;
+}
+
 .card-title {
     color: var(--main-branding-color) !important;
+    height: 2.5em !important;
+    text-align: center;
 }
 
 .card-text {
     color: var(--fonts-color) !important;
+    height: 5em !important;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card-button {
+    padding: 20px 40px;
 }
 
 .af-nav-container {
@@ -121,8 +162,44 @@ footer {
     padding-right: 15% !important;
 }
 
+.modal-content {
+    background-color: var(--main-background-color);
+}
+
+.modal-img-wrapper {
+    padding: 0 5%;
+}
+
+.modal-content img {
+    border: 10px solid white;
+    border-radius: 25px;
+    max-height: 400px;
+    object-fit: cover !important;
+}
+
+.modal-content h3 {
+    color: var(--main-branding-color);
+    font-size: 150% !important;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-bottom: 1px solid var(--buttons-color);
+}
+
+.modal-content p {
+    padding: 20px;
+}
+
+.modal-footer {
+    padding-bottom: 20px;
+}
+
+.modal-footer button {
+    min-width: 190px;
+}
+
 @media (max-width: 1000px) {
-    .af-nav-container, footer, #main-content {
+    .af-nav-container, footer, #main-content, h2{
         padding-left: 3% !important;
         padding-right: 3% !important;
     }
