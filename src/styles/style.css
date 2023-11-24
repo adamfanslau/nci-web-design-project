@@ -1,7 +1,129 @@
+/*color scheme
+#EAE7DC - white
+#D8C3A5 - bej
+#8E8D8A - grey
+#E98074 - pink
+#E85A4F - dark pink
+*/
+
+:root {
+    --main-branding-color: #E85A4F;
+    --buttons-color:#E98074;
+    --fonts-color:#8E8D8A;
+    --header-footer-color: #D8C3A5 ;
+    --main-background-color:#EAE7DC;
+}
+
 body {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;;
+}
+
+p {
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
+    color: var(--fonts-color) !important;
 }
 
 .af-placeholder {
-    height: 500px;
+    height: 800px;
 }
+
+#ada-name {
+    font-size: 150% !important;
+    font-weight: bold;
+    color: var(--buttons-color) !important;
+}
+
+#ada-name > span {
+    color: var(--main-branding-color) !important;
+}
+
+h1 {
+    font-size: 200% !important;
+    font-weight: bold;
+    color: var(--fonts-color) !important;
+    padding-bottom: 15px;
+    letter-spacing: 8px;
+    border-bottom: 1px solid var(--main-branding-color);
+}
+
+h5 {
+    font-size: 180% !important;
+    font-weight: bold;
+    color: var(--main-branding-color) !important;
+}
+
+#navbar, #footer {
+    background-color: var(--header-footer-color) !important;
+}
+
+svg {
+    fill: var(--buttons-color);
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+.nav-link {
+    font-size: 100% !important;
+    color: var(--fonts-color) !important;
+}
+
+.active {
+    color: var(--main-branding-color) !important;
+    font-weight: bold !important;
+    border-bottom: 1px solid var(--main-branding-color);
+}
+
+footer {
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+}
+
+#main-content {
+    background-image: url('../images/sample-background-2.jpg');
+    background-size: cover;
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 900px;
+    margin-top: 60px;
+
+}
+
+    /* --main-branding-color: #E85A4F;
+    --buttons-color:#E98074;
+    --fonts-color:#8E8D8A;
+    --header-footer-color: #D8C3A5 ;
+    --main-background-color:#EAE7DC; */
+
+.card {
+    border: 2px solid var(--main-branding-color);
+    background-color: var(--main-background-color);
+    box-shadow: 5px 5px 5px grey;
+}
+
+.btn-primary {
+    background-color: var(--buttons-color) !important;
+    border-color: var(--buttons-color) !important;
+}
+
+.card-title {
+    color: var(--main-branding-color) !important;
+}
+
+.card-text {
+    color: var(--fonts-color) !important;
+}
+
+.af-nav-container {
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+}
+
+@media (max-width: 1000px) {
+    .af-nav-container, footer, #main-content {
+        padding-left: 3% !important;
+        padding-right: 3% !important;
+    }
+  }
