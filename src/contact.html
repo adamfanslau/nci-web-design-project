@@ -56,6 +56,66 @@
       </nav>
       <div class="container-fluid" id="main-content">
         <h1>Contact Us</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        
+                        <select class="form-select" id="service" name="service" required>
+                            <option value="" selected disabled>Select a service</option>
+                            <option value="Website Design and Development">Website Design and Development</option>
+                            <option value="UI/UX Design">UI/UX Design</option>
+                            <option value="E-commerce Website Design">E-commerce Website Design</option>
+                            <option value="Custom Web Applications">Custom Web Applications</option>
+                            <option value="Content Management System (CMS) Integration">Content Management System (CMS) Integration</option>
+                            <option value="Website Maintenance and Support">Website Maintenance and Support</option>
+                            <option value="Search Engine Optimization (SEO)">Search Engine Optimization (SEO)</option>
+                            <option value="Graphic Design">Graphic Design</option>
+                            <option value="Social Media Integration">Social Media Integration</option>
+                            <option value="Web Hosting and Domain Setup">Web Hosting and Domain Setup</option>
+                            <option value="Mobile App Design (UI/UX)">Mobile App Design (UI/UX)</option>
+                            <option value="Consulting and Training">Consulting and Training</option>
+                            <option value="Consulting and Training">Other (please mention below)</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="subscribe" name="subscribe">
+                        <label class="form-check-label" for="subscribe">Subscribe to our newsletter</label>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message:</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="contactConfirmationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Thank you for contacting us! We will get back to you soon.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
       </div>
       <div class="container-fluid" id="footer">
         <footer class="py-5">
