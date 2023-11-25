@@ -29,6 +29,11 @@ h5{
 .navbar, .myFooter {
     background-color: var(--header-footer-color)  !important;
 }
+footer {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+}
+
 .btn{
     background-color: var(--buttons-color);
     border-color: var(--buttons-color);
