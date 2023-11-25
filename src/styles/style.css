@@ -94,6 +94,10 @@ footer {
     padding-right: 15% !important;
 }
 
+footer h5 {
+    font-size: 120% !important;
+}
+
 /* Improved Footer Animation */
 .footer-link {
     color: var(--fonts-color) !important;
