@@ -98,6 +98,10 @@ footer h5 {
     font-size: 120% !important;
 }
 
+footer .border-top {
+    border-top: 1px solid var(--main-branding-color) !important;
+}
+
 /* Improved Footer Animation */
 .footer-link {
     color: var(--fonts-color) !important;
