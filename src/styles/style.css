@@ -1,6 +1,6 @@
 /*color scheme
 #EAE7DC - white
-#D8C3A5 - bej
+#D8C3A5 - beige
 #8E8D8A - grey
 #E98074 - pink
 #E85A4F - dark pink
@@ -8,14 +8,15 @@
 
 :root {
     --main-branding-color: #E85A4F;
-    --buttons-color:#E98074;
-    --fonts-color:#8E8D8A;
-    --header-footer-color: #D8C3A5 ;
-    --main-background-color:#EAE7DC;
+    --buttons-color: #E98074;
+    --fonts-color: #8E8D8A;
+    --header-footer-color: #D8C3A5;
+    --main-background-color: #EAE7DC;
 }
 
 body {
-    font-family: 'Josefin Sans', sans-serif;;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 p {
@@ -53,7 +54,8 @@ h5 {
     color: var(--main-branding-color) !important;
 }
 
-#navbar, #footer {
+#navbar,
+#footer {
     background-color: var(--header-footer-color) !important;
 }
 
@@ -66,6 +68,11 @@ svg {
 .nav-link {
     font-size: 100% !important;
     color: var(--fonts-color) !important;
+    transition: color 0.5s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--main-branding-color) !important;
 }
 
 .active {
@@ -79,6 +86,16 @@ footer {
     padding-right: 15% !important;
 }
 
+/* Improved Footer Animation */
+.footer-link {
+    color: var(--fonts-color) !important;
+    transition: color 0.5s ease-in-out;
+}
+
+.footer-link:hover {
+    color: var(--main-branding-color) !important;
+}
+
 #main-content {
     background-image: url('../images/sample-background-2.jpg');
     background-size: cover;
@@ -88,24 +105,29 @@ footer {
     padding-bottom: 50px;
     min-height: 900px;
     margin-top: 60px;
-
 }
-
-    /* --main-branding-color: #E85A4F;
-    --buttons-color:#E98074;
-    --fonts-color:#8E8D8A;
-    --header-footer-color: #D8C3A5 ;
-    --main-background-color:#EAE7DC; */
 
 .card {
     border: 2px solid var(--main-branding-color);
     background-color: var(--main-background-color);
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+    transition: border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.card:hover {
+    border-color: var(--main-branding-color);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary {
     background-color: var(--buttons-color) !important;
     border-color: var(--buttons-color) !important;
+    transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: var(--main-branding-color) !important;
+    border-color: var(--main-branding-color) !important;
 }
 
 .card-title {
@@ -121,9 +143,47 @@ footer {
     padding-right: 15% !important;
 }
 
-@media (max-width: 1000px) {
-    .af-nav-container, footer, #main-content {
-        padding-left: 3% !important;
-        padding-right: 3% !important;
-    }
-  }
+/* Improved Form Animation */
+.form-control {
+    background-color: var(--main-background-color);
+    border: 2px solid var(--main-branding-color);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+    transition: border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.form-control:hover {
+    border-color: var(--main-branding-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Improved Dropdown Animation */
+.form-select {
+    background-color: var(--main-background-color);
+    border: 2px solid var(--main-branding-color);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+    transition: border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.form-select:hover {
+    border-color: var(--main-branding-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-select:focus {
+    border-color: var(--main-branding-color);
+    box-shadow: 0 0 0 0.2rem rgba(232, 90, 79, 0.25);
+}
+
+/* Improved Checkbox Animation */
+.form-check-input {
+    background-color: var(--main-background-color);
+    border: 2px solid var(--main-branding-color);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+    transition: border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.form-check-input:hover {
+    border-color: var(--main-branding-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
