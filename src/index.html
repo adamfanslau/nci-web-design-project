@@ -11,13 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;700&display=swap" rel="stylesheet">
 
+     <!--jQuery -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
     <!-- Bootstrap: -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
-
+   
     <!-- Local links: -->
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -50,8 +52,9 @@
             </div>
         </div>
     </nav>
+    <!--Section Carousel-->
     <div>
-        <div id="carouselExample" class="carousel slide">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
         
             <div class="carousel-inner">
               <div class="carousel-item active ">
@@ -64,21 +67,25 @@
                 <img src="images/BG_im3.jpg" class="d-block w-100" alt="...">
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div class="backimage">
+        <!--Section two words about company-->
+        <div>
            
 <h2>ADA Web Design</h2><!--need to add information about company-->
 <p>Our web studio offers a full range of website development services. We create unique and modern websites that meet the needs of the client and their business.</p>
         </div>
-        <div class="nice_numbers d-none d-lg-block"> <!--Visualization of companies results--> 
+
+        <!--Visualization of companies results--> 
+        <div class="nice_numbers_cont d-none d-lg-block"> 
             <div class="row">
                 <div class="col-4">
                     <div class="nice_numbers">
@@ -110,53 +117,46 @@
             </div>
         </div>
         <br />
-        <div class="projects">
+        <!--Section about projects-->
+        <div class="projects  backimage">
             <div class="container">
                 <div class="title-wrap">
                     <div class="sec-title">
                         <span>Portfolio</span>
                         <h2>Our last projects</h2>
-                        <div class="row g-4">
-                            <div class="col-md-6 col-lg-4">
-                                <div class="item-img">
-                                    <a href="" rel="nofollow">
-                                        <img src="images/BG_im1.jpg">
-                                    </a>
-                                </div>
-                                <div class="item-text"></div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="item-img">
-                                    <a href="" rel="nofollow">
-                                        <img src="images/BG_im1.jpg">
-                                    </a>
-                                </div>
-                                <div class="item-text"></div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="item-img">
-                                    <a href="" rel="nofollow">
-                                        <img src="images/BG_im1.jpg">
-                                    </a>
-                                </div>
-                                <div class="item-text"></div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="item-img">
-                                    <a href="" rel="nofollow">
-                                        <img src="images/BG_im1.jpg">
-                                    </a>
-                                </div>
-                                <div class="item-text"></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 single-project">
+                        <div class="project-img">
+                            <a href="#" rel="nofollow">
+                                <img src="images/BG_im1.jpg" alt>
+                            </a>
+                        </div>
+                        <div class="project-inner-text">
+                             <h5>Project_1</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 single-project">
+                        <div class="project-img">
+                            <a href="#" rel="nofollow">
+                                <img src="images/BG_im1.jpg" alt>
+                            </a>
+                        </div>
+                        <div class="project-inner-text">
+                             <h5>Project_2</h5>
+                        </div>
+                    </div>        
+                         
+                </div>
+                <div class="know-more-btn center-text">
+                    <a class="btn" href="portfolio.html">Learn more</a>
+                </div>
             </div>
-
-
         </div>
-        <div class="container">
+
+        <!--Stages of web-development--> 
+        <div class="container stages">
             <div class="title-wrap">
                 <div class="sec-title">
                     <span>Website development includes several stages</span> 
@@ -166,9 +166,14 @@
             </div>
             <div class="stages">
                 <div class="row mb-4">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-12">
                         <div class="details-text">
-                            Text-01
+                            <br />
+                            <h4>Research competitors before creating a site</h4>
+                            <p>Conducting a thorough competitor analysis is an important step in the website development process. This helps us understand the existing players in your industry, what strategies they use, and how we can create a site that will be competitive and meet the needs of your target audience.
+                            </p>
+                            <p>After collecting the necessary information, we can develop a strategy for your site that takes into account the competitive environment and appears more attractive to your target audience.
+                            </p>  
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -185,15 +190,21 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="details-text">
-                            Text-02
+                            <br />
+                            <h4>Design development</h4>
+                            <p>Design development is an important part of the website creation process, as it defines the look and user interface of the website.</p>
+                            <p>Design development is a creative process, and it is important to consider the wishes and needs of the customer, as well as to provide a better user experience for site visitors.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row mb-4">
                     <div class="col-lg-6">
                         <div class="details-text">
-                            Text-03
-                        </div>
+                            <br />
+                            <h4>Site development</h4>
+                            <p>Website development is the process of creating and launching a web space for your business or project. From requirements gathering and design to programming and testing, website development brings your idea to life and provides an online presence to reach your audience.
+                            </p>
+                    </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="details-img">
@@ -216,28 +227,28 @@
                 <div class="col-6 col-md-2 mb-3">
                 <h5>Website development</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Business card site</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Corporate site</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Internet-shop</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Landing page</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Promo site</a></li>
+                    <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-body-secondary">Business card site</a></li>
+                    <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-body-secondary">Corporate site</a></li>
+                    <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-body-secondary">Internet-shop</a></li>
+                    <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-body-secondary">Landing page</a></li>
+                    <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-body-secondary">Promo site</a></li>
                 </ul>
                 </div>
         
                 <div class="col-6 col-md-2 mb-3">
                 <h5>Additional Services</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contextual advertising</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Targeting</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">SEO promotion</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Logo design</a></li>
+                    <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-body-secondary">Contextual advertising</a></li>
+                    <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-body-secondary">Targeting</a></li>
+                    <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-body-secondary">SEO promotion</a></li>
+                    <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-body-secondary">Logo design</a></li>
                 </ul>
                 </div>
         
                 <div class="col-6 col-md-2 mb-3">
                 <h5>Contacts</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-body-secondary">Home</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
@@ -279,5 +290,6 @@
             </div>
         </footer>
       </div>
+    <script src="/src/scripts/script.js"> </script>
 </body>
 </html>

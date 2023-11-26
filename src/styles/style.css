@@ -18,10 +18,18 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     background-color: var(--main-background-color) ;
+    font-size: 16px;
 }
 h2{
     color: var(--fonts-color);
+    text-shadow: 1px 2px 1px var(--buttons-color);
 }
+
+h4{
+color: var(--main-branding-color);
+;
+}
+
 h5{
     color: var(--main-branding-color);
 }
@@ -37,26 +45,59 @@ footer {
 .btn{
     background-color: var(--buttons-color);
     border-color: var(--buttons-color);
-
+    color: var(--main-background-color);
 }
+
+.projects .btn{
+    color: var(--main-background-color);
+    border: 1px solid var(--main-branding-color);
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 30px;
+    border-radius: 4px;
+    margin: 20px 0;    
+}
+
+.center-text {
+    text-align: center;
+}
+
 .btn:hover{
     background-color: var(--main-branding-color);
     border-color: var(--buttons-color);
+    color: var(--main-background-color);
 }
 
 .backimage{
-    background-image: url("Background_im_main.jpeg");
-    height: 300px;🕺
-  }
-
-.nice_numbers{
+    background: url(../images/Background_numbers.jpeg) !important;
+    /*z-index: 1;
+    position: relative;*/
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+    /* 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 900px;
+    margin-top: 60px;
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+  }*/
+.nice_numbers_cont{
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
     line-height: 1.4;
     text-align: center;
-    margin-bottom: 10px;
     color: var(--fonts-color);
+    padding: 25px;
+  }
+  
+.nice_numbers{
+    padding: 25px;
+   /* box-shadow: inset 0 0 10px var(--buttons-color);
+    border-radius: 5px;*/
 }
 
 .nice_numbers .nice_numbers-emoji {
@@ -64,6 +105,9 @@ footer {
     font-size: 36px;
 }
 
+.projects{
+    padding: 25px 0;
+}
 .sec-title {
     text-align: center;
     margin-bottom: 50px;
@@ -72,6 +116,10 @@ footer {
 .title-wrap {
     max-width: 630px;
     margin: 0 auto;
+}
+
+.stages{
+    padding: 25px 0;
 }
 
 .sec-title span {
@@ -84,15 +132,50 @@ footer {
     padding-bottom: 2px;
     margin-bottom: 5px;
 }
-
-
-.single-item {
+.single-project{
     position: relative;
 }
 
-.item-img a img, .details-img img {
+.single-project .project-inner-text{
+        background-color: var(--header-footer-color);
+        border-radius: 5px;
+        padding: 20px;
+        width: 90%;
+        left: 5%;
+        position: absolute;
+        bottom: 5%;
+}
+.single-item .item-inner-cnt h4 {
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: inherit;
+    color: #e4e4e4;
+    margin: 0;
+}
+
+.project-img a img, .details-img img {
     width: 100%;
     border-radius: 10px;
 }
 
+#myCarousel {
+    width: 100%;
+}
 
+.carousel-item {
+    text-align: center;
+}
+
+@media (min-width: 992px){
+
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+}
+@media (min-width: 768px){
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+}
