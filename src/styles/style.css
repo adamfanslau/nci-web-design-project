@@ -291,6 +291,64 @@ h1 + .container {
     padding-left: 20px;
 }
 
+#quiz-container {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid var(--main-branding-color);
+    padding-left: 5%;
+}
+
+#quiz-container h4 {
+    color: var(--main-branding-color);
+    margin-top: 20px;
+}
+
+.quiz-option {
+    display: inline-block;
+    background-color: var(--main-branding-color);
+    color: var(--main-background-color);
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+    line-height: 55px;
+}
+
+.quiz-option:hover {
+    color: var(--main-branding-color);
+    background-color: var(--main-background-color);
+    border: 1px solid var(--main-branding-color);
+}
+
+#quizModalLabel {
+    padding-left: 30px;
+}
+
+#quizModal h6 {
+    color: var(--buttons-color);
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+#quiz-start-button {
+    width: 300px;
+    height: 90px;
+    border-radius: 10px;
+    border: 2px solid var(--main-branding-color);
+    color: var(--main-branding-color);
+    background-color: var(--main-background-color-opaque);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#quiz-start-button:hover {
+    color: var(--main-background-color);
+    background-color: var(--main-branding-color);
+}
+
 @media (max-width: 1000px) {
     .af-nav-container, footer, #main-content, h2{
         padding-left: 3% !important;

@@ -18,6 +18,7 @@
     <!-- Local links: -->
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/quiz.js" defer></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top" id="navbar">
@@ -53,11 +54,33 @@
                 </ul>
             </div>
         </div>
-      </nav>
-      <div class="container-fluid" id="main-content">
+    </nav>
+    <div class="container-fluid" id="main-content">
         <h1>Quiz</h1>
-      </div>
-      <div class="container-fluid" id="footer">
+        <h2>Do you enjoy cool facts about the history of internet? Try out our quiz and test your knowledge!</h2>
+        <div class="d-flex justify-content-center">
+            <button id="quiz-start-button">START QUIZ</button>
+        </div>
+        <div id="quiz-container" class="container"></div>
+        <!-- Modal -->
+        <div class="modal fade" id="quizModal" tabindex="-1" aria-labelledby="quizModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <h3 class="modal-title fs-5" id="quizModalLabel">Modal title</h3>
+                    <div class="modal-body" id="quizModalBody">
+                    ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="footer">
         <footer class="py-5">
             <div class="row">
                 <div class="col-6 col-md-2 mb-3">
