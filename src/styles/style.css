@@ -72,11 +72,6 @@ h2 {
 
 h4{
 color: var(--main-branding-color);
-;
-}
-
-h5{
-    color: var(--main-branding-color);
 }
 
 h5 {
@@ -112,8 +107,8 @@ svg {
 }
 
 footer {
-    padding-left: 10% !important;
-    padding-right: 10% !important;
+    padding-left: 15% !important;
+    padding-right: 15% !important;
 }
 
 footer h5 {
@@ -544,4 +539,4 @@ h1 + .container {
         padding-left: 3% !important;
         padding-right: 3% !important;
     }
-  }
+}
