@@ -107,8 +107,8 @@ svg {
 }
 
 footer {
-    padding-left: 15% !important;
-    padding-right: 15% !important;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
 }
 
 footer h5 {
@@ -132,8 +132,8 @@ footer .border-top {
 #main-content {
     background-image: url('../images/sample-background-2.jpg');
     background-size: cover;
-    padding-left: 15% !important;
-    padding-right: 15% !important;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
     padding-top: 50px;
     padding-bottom: 50px;
     min-height: 900px;
@@ -366,8 +366,8 @@ a {
 }
 
 .af-nav-container {
-    padding-left: 15% !important;
-    padding-right: 15% !important;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
 }
 
 .modal-content {
@@ -534,9 +534,70 @@ h1 + .container {
     background-color: var(--main-branding-color);
 }
 
+@media (max-width: 1500px) {
+    .af-nav-container, footer, #main-content, h2{
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+}
+
 @media (max-width: 1000px) {
     .af-nav-container, footer, #main-content, h2{
-        padding-left: 3% !important;
-        padding-right: 3% !important;
+        padding-left: 2% !important;
+        padding-right: 2% !important;
     }
+}
+
+@media (max-width: 1210px) {
+    #scroll-container {
+        display: none;
+    }
+}
+
+#scroll-container {
+    border: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  #scroll-text {
+    color: var(--buttons-color);
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 20s linear infinite;
+    -webkit-animation: my-animation 20s linear infinite;
+    animation: my-animation 20s linear infinite;
+    overflow: hidden;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+}
+
+#navbarNav {
+    min-width: 420px;
 }
