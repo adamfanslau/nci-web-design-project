@@ -19,6 +19,8 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    background-color: var(--main-background-color) ;
+    font-size: 16px;
 }
 
 p {
@@ -26,7 +28,11 @@ p {
     color: var(--fonts-color) !important;
 }
 
-.af-placeholder {
+.navbar, .myFooter {
+    background-color: var(--header-footer-color)  !important;
+}
+
+.af-placeholder { /*why we need it?*/
     height: 800px;
 }
 
@@ -64,6 +70,26 @@ h2 {
     margin-bottom: 50px;
 }
 
+h2{ /*add more specific selector for index.html*/
+    color: var(--fonts-color);
+    text-shadow: 1px 2px 1px var(--buttons-color);
+}
+
+h4{
+color: var(--main-branding-color);
+;
+}
+
+h5{
+    color: var(--main-branding-color);
+}
+
+h5 {
+    font-size: 160% !important;
+    font-weight: bold;
+    color: var(--main-branding-color) !important;
+}
+
 #navbar, #footer {
     background-color: var(--header-footer-color) !important;
 }
@@ -91,8 +117,8 @@ svg {
 }
 
 footer {
-    padding-left: 15% !important;
-    padding-right: 15% !important;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
 }
 
 footer h5 {
@@ -123,7 +149,118 @@ footer .border-top {
     min-height: 900px;
     margin-top: 60px;
 }
+/*Styles for main page*/
+.backimage{
+    background: url(../images/main/Bg_img_project.jpeg) !important;
+    /*z-index: 1;
+    position: relative;*/
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+    /* 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 900px;
+    margin-top: 60px;
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+  }*/
+.nice_numbers_cont{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--fonts-color);
+    padding: 25px;
+  }
+  
+.nice_numbers{
+    padding: 25px;
+   /* box-shadow: inset 0 0 10px var(--buttons-color);
+    border-radius: 5px;*/
+}
 
+.nice_numbers .nice_numbers-emoji {
+    display: block;
+    font-size: 36px;
+}
+
+.projects{
+    padding: 25px 0;
+}
+.sec-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title-wrap {
+    max-width: 630px;
+    margin: 0 auto;
+}
+
+.stages{
+    padding: 25px 0;
+}
+
+.sec-title span {
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    color: var(--main-branding-color);
+    text-transform: inherit;
+    border-bottom: 1px solid var(--main-branding-color);
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+}
+.single-project{
+    position: relative;
+}
+
+.single-project .project-inner-text{
+        background-color: var(--header-footer-color);
+        border-radius: 5px;
+        padding: 20px;
+        width: 90%;
+        left: 5%;
+        position: absolute;
+        bottom: 5%;
+}
+.single-item .item-inner-cnt h4 {
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: inherit;
+    color: #e4e4e4;
+    margin: 0;
+}
+
+.project-img a img, .details-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#myCarousel {
+    width: 100%;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+@media (min-width: 992px){
+
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+    }
+    @media (min-width: 768px){
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    }
 /* STYLES FOR PORTFOLIO PAGE CARDS: */
 
 .card {
@@ -143,10 +280,22 @@ a {
     background-color: var(--main-background-color-opaque);
     box-shadow: 7px 7px 7px grey;
 }
+.btn{
+    background-color: var(--buttons-color);
+    border-color: var(--buttons-color);
+    color: var(--main-background-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 
-.btn-primary {
-    background-color: var(--buttons-color) !important;
-    border-color: var(--buttons-color) !important;
+}
+
+.projects .btn{
+    color: var(--main-background-color);
+    border: 1px solid var(--main-branding-color);
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 30px;
+    border-radius: 4px;
+    margin: 20px 0;   
 }
 
 .card-img-top {
@@ -154,10 +303,14 @@ a {
     object-fit: cover !important;
 }
 
-h5 {
-    font-size: 160% !important;
-    font-weight: bold;
-    color: var(--main-branding-color) !important;
+.center-text {
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: var(--main-branding-color);
+    border-color: var(--buttons-color);
+    color: var(--main-background-color);
 }
 
 .card-title {
@@ -337,9 +490,6 @@ h1 + .container {
     width: 300px;
     height: 90px;
     border-radius: 10px;
-    border: 2px solid var(--main-branding-color);
-    color: var(--main-branding-color);
-    background-color: var(--main-background-color-opaque);
     font-size: 35px;
     font-weight: bold;
 }
