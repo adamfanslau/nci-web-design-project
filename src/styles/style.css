@@ -70,11 +70,6 @@ h2 {
     margin-bottom: 50px;
 }
 
-h2{ /*add more specific selector for index.html*/
-    color: var(--fonts-color);
-    text-shadow: 1px 2px 1px var(--buttons-color);
-}
-
 h4{
 color: var(--main-branding-color);
 ;
@@ -150,22 +145,24 @@ footer .border-top {
     margin-top: 60px;
 }
 /*Styles for main page*/
+
+.shotly-about-company{
+    padding: 5% 5% 0 5%;
+
+}
+h3{
+        
+    color: var(--fonts-color);
+    text-shadow: 1px 2px 1px var(--buttons-color);
+    
+}
 .backimage{
     background: url(../images/main/Bg_img_project.jpeg) !important;
-    /*z-index: 1;
-    position: relative;*/
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
-}
-    /* 
-    padding-top: 50px;
-    padding-bottom: 50px;
-    min-height: 900px;
-    margin-top: 60px;
-    padding-left: 15% !important;
-    padding-right: 15% !important;
-  }*/
+     }
+
 .nice_numbers_cont{
     font-style: normal;
     font-weight: 800;
@@ -189,10 +186,10 @@ footer .border-top {
 
 .projects{
     padding: 25px 0;
+    
 }
 .sec-title {
     text-align: center;
-    margin-bottom: 50px;
 }
 
 .title-wrap {
