@@ -151,15 +151,34 @@ footer .border-top {
 }
 
 #main-content {
-    background-image: url('../images/sample-background-2.jpg');
-    background-size: cover;
     padding-left: 10% !important;
     padding-right: 10% !important;
     padding-top: 50px;
     padding-bottom: 50px;
-    min-height: 900px;
+    min-height: 600px;
     margin-top: 60px;
 }
+
+.main-background {
+    background-image: url('../images/sample-background-2.jpg');
+    background-size: cover;
+}
+
+.quiz-background {
+    background-image: url('../images/quiz-background.jpg');
+    background-size: cover;
+}
+
+.contact-background {
+    background-image: url('../images/contact-background.jpg');
+    background-size: cover;
+}
+
+.about-background {
+    background-image: url('../images/about-background.jpg');
+    background-size: cover;
+}
+
 /*Styles for main page*/
 .image-description{
   position: absolute;
