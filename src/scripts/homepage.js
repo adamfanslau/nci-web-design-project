@@ -22,3 +22,4 @@ function carouselImgClick(e) {
   
   next.addEventListener("click", hideDescr);
   prev.addEventListener("click", hideDescr);
+

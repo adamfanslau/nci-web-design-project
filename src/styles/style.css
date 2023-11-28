@@ -12,7 +12,7 @@
   */
     --main-branding-color: #E85A4F;
     --buttons-color:#E98074;
-    --fonts-color:#8E8D8A;
+    --fonts-color:#757571;
     --header-footer-color: #D8C3A5 ;
     --main-background-color:#EAE7DC;
     --main-background-color-opaque:#eae7dc9a;
@@ -161,19 +161,13 @@ footer .border-top {
 }
 /*Styles for main page*/
 .image-description{
-    /*width: 100%;
-    height: 100vh;
-    background-color: rgb(234 231 220/0.5);
-    z-index: 1;
-    display: none;
-    font-size: 36px;
-    line-height: 100vh;*/
   position: absolute;
   bottom: 10%;
   left: 10%;
   right: 0;
   background-color: rgb(234 231 220/0.4); 
-  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   padding: 20px;
   color: var(--main-branding-color); 
   text-align: left;
@@ -190,6 +184,9 @@ footer .border-top {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.img-carousel:hover {
+    cursor: pointer; /* Change the cursor to a hand on hover */
 }
 
 .img-carousel-1 {
@@ -434,10 +431,9 @@ a {
     visibility: hidden;
     position: absolute;
     margin: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 80vh;
+    top: 100px;
+    left: 0;
+    right:0;   
     width: 70vw;
     background: #fff;
     border-radius: var(--border-rad);
