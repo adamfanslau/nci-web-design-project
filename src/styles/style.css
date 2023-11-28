@@ -23,7 +23,7 @@ body {
     font-size: 16px;
 }
 
-p, ul {
+p, ul.our.services {
     font-family: 'Mukta', sans-serif;
     color: var(--fonts-color) !important;
 }
