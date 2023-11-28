@@ -402,6 +402,15 @@ a {
     padding: 20px 40px;
 }
 
+.modal-body ul {
+    color: var(--fonts-color);
+    padding-left: 50px;
+}
+
+.modal-body p.portfolio-modal-paragraph {
+    padding: 0px;
+}
+
 /*Blog page*/
 .articles, .articleDate{
     color: var(--fonts-color);
@@ -513,7 +522,7 @@ a {
 }
 
 .modal-img-wrapper {
-    padding: 0 5%;
+    padding: 20px 5%;
 }
 
 .modal-content img {
