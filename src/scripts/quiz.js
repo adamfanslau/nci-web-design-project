@@ -378,6 +378,7 @@ function generateQuizHtml () {
         }
         quizHtml += `</div>`;
     }
+    quizHtml += `<h2 id="quiz-bottom-text">Press [START QUIZ] button for new set of random questions :-)</h2>`;
 
     return quizHtml;
 }

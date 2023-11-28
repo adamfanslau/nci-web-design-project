@@ -672,6 +672,13 @@ h1 + .container {
     background-color: var(--main-branding-color);
 }
 
+#quiz-bottom-text {
+    margin-top: 50px;
+    border-top: 1px solid var(--main-branding-color);
+    text-align: center;
+    padding-top: 20px;
+}
+
 @media (max-width: 1500px) {
     .af-nav-container, footer, #main-content, h2{
         padding-left: 5% !important;
