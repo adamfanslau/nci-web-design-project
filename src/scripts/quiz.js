@@ -110,19 +110,19 @@ quizQuestions = [
         question: `What is the most searched keyword on google so far in 2023?`,
         possibleAnswers: [
             {
-                answer: `youtube`,
+                answer: `"youtube"`,
                 isCorrect: true
             },
             {
-                answer: `facebook`,
+                answer: `"facebook"`,
                 isCorrect: false
             },
             {
-                answer: `weather`,
+                answer: `"weather"`,
                 isCorrect: false
             },
             {
-                answer: `nci`,
+                answer: `"nci"`,
                 isCorrect: false
             }
         ],
@@ -335,11 +335,11 @@ quizQuestions = [
             },
             {
                 answer: `WhatsApp`,
-                isCorrect: true
+                isCorrect: false
             },
             {
                 answer: `Facebook`,
-                isCorrect: false
+                isCorrect: true
             },
             {
                 answer: `TikTok`,
