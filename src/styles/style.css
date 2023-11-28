@@ -7,13 +7,34 @@
 */
 
 :root {
+    /*
+  COLORS
+  */
     --main-branding-color: #E85A4F;
     --buttons-color:#E98074;
-    --fonts-color:#8E8D8A;
+    --fonts-color:#757571;
     --header-footer-color: #D8C3A5 ;
     --main-background-color:#EAE7DC;
     --main-background-color-opaque:#eae7dc9a;
     --main-background-color-opaque-2:#eae7dce0;
+
+  /*
+  SPACING
+  */
+  --space-sm: 5px;
+  --space-md: 10px;
+  --space-lg: 15px;
+  --space-xl: 30px;
+
+  --border-rad: 10px;
+
+  /*
+  FONT
+  */
+  --font-sm: 14px;
+  --font-md: 18px;
+  --font-lg: 28px;
+  --font-weight-bold: 800;
 }
 
 body {
@@ -141,19 +162,13 @@ footer .border-top {
 }
 /*Styles for main page*/
 .image-description{
-    /*width: 100%;
-    height: 100vh;
-    background-color: rgb(234 231 220/0.5);
-    z-index: 1;
-    display: none;
-    font-size: 36px;
-    line-height: 100vh;*/
   position: absolute;
   bottom: 10%;
   left: 10%;
   right: 0;
   background-color: rgb(234 231 220/0.4); 
-  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   padding: 20px;
   color: var(--main-branding-color); 
   text-align: left;
@@ -170,6 +185,9 @@ footer .border-top {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.img-carousel:hover {
+    cursor: pointer; /* Change the cursor to a hand on hover */
 }
 
 .img-carousel-1 {
@@ -214,15 +232,12 @@ h3{
   
 .nice_numbers{
     padding: 25px;
-   /* box-shadow: inset 0 0 10px var(--buttons-color);
-    border-radius: 5px;*/
 }
 
 .nice_numbers .nice_numbers-emoji {
     display: block;
     font-size: 36px;
 }
-
 
 .projects{
     padding: 25px 0;
@@ -386,6 +401,107 @@ a {
 .card-button {
     padding: 20px 40px;
 }
+
+/*Blog page*/
+.articles, .articleDate{
+    color: var(--fonts-color);
+}
+.articleImage {
+    width: 100%;
+    border-radius: var(--border-rad);
+  }
+  
+  .articleHeader {
+    font-size: var(--font-lg);
+    font-weight: var(--font-weight-bold);
+    line-height: initial;
+    margin-bottom: var(--space-md);
+    padding-top: var(--space-md);
+    color: var(--main-branding-color);
+  }
+  
+  .articleShort {
+    padding-bottom: var(--space-lg);
+  }
+  
+  .articleMore {
+    background: none;
+    border: none;
+    padding: var(--space-sm) 0;
+    color: var(--main-branding-color);
+  }
+  
+  /* Fully opened article */
+  .articleFull {
+    visibility: hidden;
+    position: absolute;
+    margin: auto;
+    top: 100px;
+    left: 0;
+    right:0;   
+    width: 70vw;
+    background: #fff;
+    border-radius: var(--border-rad);
+    overflow: hidden;
+    box-shadow: 0px 15px 20px 15px rgb(28 28 28 /.3);
+    transition: visibility 100ms ease-in-out;
+  }
+
+  .articleFull h5{
+    font-size: var(--font-sm);
+  }
+  
+  .articleImageBig {
+    background-image: url("../images/blog/1.jpg");
+    background-position: center;
+    height: 200px;
+    margin-bottom: var(--space-lg);
+  }
+  
+  .articleWrapper {
+    padding: var(--space-xl);
+  }
+  
+  .articleLong {
+    font-size: var(--font-md);
+    margin-bottom: var(--space-lg);
+  }
+  
+  .articleClose {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background: var(--buttons-color);
+    color: var(--main-background-color);
+    border: 1px solid var(--main-branding-color);
+    padding: var(--space-md) var(--space-lg);
+    border-radius: var(--border-rad);
+    text-transform: uppercase;
+    transition: color 250ms linear;
+  }
+  
+  
+  .articleClose:hover {
+    background-color: var(--main-branding-color);
+  }
+  
+  @media (max-width: 900px){
+  
+    .articleFull {
+      height: 90vh;
+      width: 90vw;
+    }
+  }
+  
+  @media (max-width: 648px){
+    .articleFull {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  
+/*end for Blog page*/
 
 .af-nav-container {
     padding-left: 10% !important;
