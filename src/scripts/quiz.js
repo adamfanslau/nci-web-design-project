@@ -216,6 +216,138 @@ quizQuestions = [
         ],
         explanation: `The country with the highest internet speed is Taiwan. With an average internet speed of 85.02 Mbps, it managed to beat the previous record-holder which is Singapore.`
     },
+    {
+        question: `Which country has the slowest internet speed in the world?`,
+        possibleAnswers: [
+            {
+                answer: `North Korea`,
+                isCorrect: false
+            },
+            {
+                answer: `Afganistan`,
+                isCorrect: false
+            },
+            {
+                answer: `Yemen`,
+                isCorrect: true
+            },
+            {
+                answer: `Somalia`,
+                isCorrect: false
+            }
+        ],
+        explanation: `The country with the slowest internet speed is Yemen. It only has an average internet speed of 0.38 Mbps.`
+    },
+    {
+        question: `Can you imagine internet without GIFs? But when was it invented?`,
+        possibleAnswers: [
+            {
+                answer: `1978`,
+                isCorrect: false
+            },
+            {
+                answer: `1990`,
+                isCorrect: false
+            },
+            {
+                answer: `2001`,
+                isCorrect: false
+            },
+            {
+                answer: `1987`,
+                isCorrect: true
+            }
+        ],
+        explanation: `The GIF format was born in 1987. Steve Wike, a Compuserve engineer, invented the format, and no, it is not pronounced as “jif.”`
+    },
+    {
+        question: `What did the first ever youtube video feature?`,
+        possibleAnswers: [
+            {
+                answer: `Super Bowl`,
+                isCorrect: false
+            },
+            {
+                answer: `St.Patrick's Day Parade`,
+                isCorrect: false
+            },
+            {
+                answer: `San Diego Zoo`,
+                isCorrect: true
+            },
+            {
+                answer: `Eiffel Tower Tour`,
+                isCorrect: false
+            }
+        ],
+        explanation: `The first video uploaded on YouTube was published on April 23, 2005. The title of the video was “Me at the zoo,” and features one of the founders of the site, Jawed Karim, at the San Diego Zoo.`
+    },
+    {
+        question: `How many google searches happen every day on average?`,
+        possibleAnswers: [
+            {
+                answer: `7-10 billion`,
+                isCorrect: true
+            },
+            {
+                answer: `2-3 trillion`,
+                isCorrect: false
+            },
+            {
+                answer: `500-800 million`,
+                isCorrect: false
+            },
+            {
+                answer: `3-5 billion`,
+                isCorrect: false
+            }
+        ],
+        explanation: `An average day for Google is composed of 7-10 billion search queries. Among those search queries, 15% are first-time searches.`
+    },
+    {
+        question: `How many emploees did Instagram have, when it was purchased for $1 billion by Facebook?`,
+        possibleAnswers: [
+            {
+                answer: `103`,
+                isCorrect: false
+            },
+            {
+                answer: `13`,
+                isCorrect: true
+            },
+            {
+                answer: `1502`,
+                isCorrect: false
+            },
+            {
+                answer: `2`,
+                isCorrect: false
+            }
+        ],
+        explanation: `Facebook procured Instagram for $1 billion on an estimate. Back then, the photo-sharing company only had 13 employees.`
+    },
+    {
+        question: `What is the most visited social media platform in the world?`,
+        possibleAnswers: [
+            {
+                answer: `YouTube`,
+                isCorrect: false
+            },
+            {
+                answer: `WhatsApp`,
+                isCorrect: true
+            },
+            {
+                answer: `Facebook`,
+                isCorrect: false
+            },
+            {
+                answer: `TikTok`,
+                isCorrect: false
+            }
+        ],
+        explanation: `The most visited social media platform in the world is Facebook. It boasts of more than 2.2 billion active users. Next in line is YouTube and WhatsApp.`
+    }
 ];
 
 function pickRandomQuizQuestions (noOfQuestions, totalNoOfQuestion) {
