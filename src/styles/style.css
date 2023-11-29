@@ -517,15 +517,13 @@ a {
   @media (max-width: 900px){
   
     .articleFull {
-      height: 90vh;
-      width: 90vw;
+      width: 90vw;   
     }
   }
   
   @media (max-width: 648px){
     .articleFull {
-      height: 100%;
-      width: 100%;
+      width: 100%;   
     }
   }
   
