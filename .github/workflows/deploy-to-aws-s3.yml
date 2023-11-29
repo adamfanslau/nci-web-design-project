@@ -1,3 +1,6 @@
+# This script deploys the website automatically to AWS S3 when any changes are pushed to main branch
+# Taken from https://dev.to/johnkevinlosito/deploy-static-website-to-s3-using-github-actions-4a0e
+
 name: Deploy Website To AWS S3
 
 on:

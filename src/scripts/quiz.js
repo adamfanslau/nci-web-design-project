@@ -1,8 +1,13 @@
+// Author of this script: Adam Fanslau
+
 quizStartButton = document.getElementById("quiz-start-button");
 quizContainer = document.getElementById("quiz-container");
 quizModalLabel = document.getElementById("quizModalLabel");
 quizModalBody = document.getElementById("quizModalBody");
 
+
+// Question bank for the quiz
+// taken from: https://facts.net/internet-facts/
 quizQuestions = [
     {
         question: `When was the first ever website published?`,
@@ -350,6 +355,8 @@ quizQuestions = [
     }
 ];
 
+// the required randomization for the js game, questions from the
+// question bank above will be picked on random with this function
 function pickRandomQuizQuestions (noOfQuestions, totalNoOfQuestion) {
     let randomQuestionsArray = [];
 
@@ -364,6 +371,8 @@ function pickRandomQuizQuestions (noOfQuestions, totalNoOfQuestion) {
     return randomQuestionsArray;
 }
 
+// this funciont takes 3 questions on random from the question bank above
+// and returns html markup with the questions and 4 answer options
 function generateQuizHtml () {
     let quizHtml = ``;
     const randomQuizQuestions = pickRandomQuizQuestions(3, quizQuestions.length)
@@ -383,6 +392,8 @@ function generateQuizHtml () {
     return quizHtml;
 }
 
+// waiting for user to click [START QUIZ] and then presenting
+// 3 random questions each time button is clicked
 quizStartButton.addEventListener("click", (e) => {
     quizContainer.innerHTML = generateQuizHtml();
 
