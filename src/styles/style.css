@@ -160,22 +160,22 @@ footer .border-top {
 }
 
 .main-background {
-    background-image: url('../images/backgrounds/main-background.jpg');
+    background-image: url('../images/backgrounds/main-background.webp');
     background-size: cover;
 }
 
 .quiz-background {
-    background-image: url('../images/backgrounds/quiz-background.jpg');
+    background-image: url('../images/backgrounds/quiz-background.webp');
     background-size: cover;
 }
 
 .contact-background {
-    background-image: url('../images/backgrounds/contact-background.jpg');
+    background-image: url('../images/backgrounds/contact-background.webp');
     background-size: cover;
 }
 
 .about-background {
-    background-image: url('../images/backgrounds/about-background.jpg');
+    background-image: url('../images/backgrounds/about-background.webp');
     background-size: cover;
 }
 
@@ -210,19 +210,19 @@ footer .border-top {
 }
 
 .img-carousel-1 {
-    background-image: url(../images/carousel/BG_im_1.jpeg);
+    background-image: url(../images/carousel/BG_im_1.webp);
 }
 .img-carousel-2 {
-    background-image: url(../images/carousel/BG_im_2.jpeg);
+    background-image: url(../images/carousel/BG_im_2.webp);
 }
 .img-carousel-3 {
-    background-image: url(../images/carousel/BG_im_3.jpg);
+    background-image: url(../images/carousel/BG_im_3.webp);
 }
 .img-carousel-4{
-    background-image: url(../images/carousel/BG_im_4.jpeg);
+    background-image: url(../images/carousel/BG_im_4.webp);
 }
 .img-carousel-5{
-    background-image: url(../images/carousel/BG_im_5.jpeg);
+    background-image: url(../images/carousel/BG_im_5.webp);
 }
 .shotly-about-company{
     padding: 5% 5% 0 5%;
@@ -233,7 +233,7 @@ h3{
     text-shadow: 1px 2px 1px var(--buttons-color)
 }
 .backimage{
-    background: url(../images/main/Bg_img_project.jpeg) !important;
+    background: url(../images/main/Bg_img_project.webp) !important;
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
@@ -481,7 +481,7 @@ a {
   }
   
   .articleImageBig {
-    background-image: url("../images/blog/1.jpg");
+    background-image: url("../images/blog/1.webp");
     background-position: center;
     height: 200px;
     margin-bottom: var(--space-lg);
